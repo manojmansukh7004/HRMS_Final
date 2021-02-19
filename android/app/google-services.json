@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "486153241683",
+    "firebase_url": "https://hrms-3a070.firebaseio.com",
+    "project_id": "hrms-3a070",
+    "storage_bucket": "hrms-3a070.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:486153241683:android:8b82473bac4e854bcd32a6",
+        "android_client_info": {
+          "package_name": "com.capl.hrms"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "486153241683-epartdeffhes3s9nn54ukl94bn9hci47.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVcXP6dxF1o7xVjqnDNjnOhnnGZoBaNvs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "486153241683-epartdeffhes3s9nn54ukl94bn9hci47.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,68 @@
+{
+  "extends": "airbnb",
+  "parser": "babel-eslint",
+  "env": {
+    "jest": true,
+  },
+  "settings" : {
+    "import/resolver": {
+      "node": {
+        "paths": ["./src"]
+      }
+    }
+  },
+  "ignorePatterns": ["src/components/calender", "node_modules/"],
+  "rules": {
+    "react/state-in-constructor": "off",
+    "react/prefer-stateless-function": "off",
+    "arrow-parens": "off",
+    "no-underscore-dangle": "off",
+    "no-console": "error",
+    "func-names": "error",
+    "react/destructuring-assignment": [0,
+      "always",
+      {
+        "ignoreClassFields": true
+      }
+    ],
+    "prefer-destructuring": [
+      "error",
+      {
+        "VariableDeclarator": {
+          "array": false,
+          "object": true
+        },
+        "AssignmentExpression": {
+          "array": true,
+          "object": true
+        }
+      },
+      {
+        "enforceForRenamedProperties": false
+      }
+    ],
+    "no-return-assign": 0,
+    "no-nested-ternary": 0,
+    "import/no-cycle": 0,
+    "import/prefer-default-export": "off",
+    "global-require": "off",
+
+
+    "no-use-before-define": "off",
+    "react/jsx-filename-extension": "off",
+    "react/prop-types": "off",
+    "comma-dangle": "off"
+  },
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true,
+      "modules": true
+    }
+  },
+  "globals": {
+    "fetch": false
+  },
+  "plugins": ["react", "jsx-a11y", "import", "prettier", "module-resolver"]
+}
