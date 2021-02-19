@@ -70,6 +70,7 @@ class PunchInScreen extends Component {
   }
 
   async componentDidMount() {
+    this.getUserLocation();
     getDynamicFieldsData('5', '0', 'ESS_Att_PunchInPunchOut', this.props.user)
       .then(dynamicFieldsData => {
         if (dynamicFieldsData) {
@@ -80,7 +81,6 @@ class PunchInScreen extends Component {
           }, async () => {
             try {
               const res = await getDynamicFieldsValues('4', '506', 'ESS_Att_PunchInPunchOut', this.props.user);
-              this.getUserLocation();
               if (res) {
                 this.setState({
                   pickerValues: res.controlDataValues[0],
@@ -103,6 +103,7 @@ class PunchInScreen extends Component {
    }
 
     getUserLocation =async () => {
+      console.log("loccc");
       if (Platform.OS === 'android') {
         try {
           const granted = await PermissionsAndroid.request(
