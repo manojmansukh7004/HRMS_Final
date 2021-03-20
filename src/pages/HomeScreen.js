@@ -547,7 +547,7 @@ class HomeScreen extends Component {
               <Text style={{ marginLeft: 10, fontSize: 12 }}>{`Sundry\nExpense`}</Text>
             </TouchableOpacity>
 
-            <TouchableOpacity style={styles.cardExpenseItem} onPress={() => this.props.navigation.navigate('SandryList')}>
+            <TouchableOpacity style={styles.cardExpenseItem} onPress={() => this.props.navigation.navigate('SandryHistory')}>
               <View style={[styles.iconExspense, { backgroundColor: this.props.secondaryColor }]}>
                 <SvgXml
                   width="40%"

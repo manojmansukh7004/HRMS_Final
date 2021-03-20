@@ -60,6 +60,7 @@ import Academicdetailview from '../pages/Academicdetailview';
 import Academicdetailedit from '../pages/Academicdetailedit';
 import Mydocumentedit from '../pages/Mydocumentedit';
 import SandryExpenseListScreen from '../pages/SandryExpenseListScreen';
+import SandryExpenseHistory from '../pages/SandryExpenseHistory';
 import CreateSandryExpenseScreen from '../pages/CreateSandryExpenseScreen';
 import ExpenseApproveRejectScreen from '../pages/ExpenseApproveRejectScreen';
 import IconMarkAllRead from '../components/IconReadAll';
@@ -220,6 +221,15 @@ const homeStack = createStackNavigator({
       />,
     }),
   },
+  SandryHistory: {
+    screen: SandryExpenseHistory,
+    navigationOptions: ({ navigation }) => ({
+      header: <Toolbar
+        title="Sundry Expense History"
+        headerLeft={<BackArrow navigation={navigation} />}
+      />,
+    }),
+  },
 
   CreateSandry: {
     screen: CreateSandryExpenseScreen,
@@ -370,6 +380,15 @@ const paySilpStack = createStackNavigator({
     navigationOptions: ({ navigation }) => ({
       header: <Toolbar
         title="Sundry Expense"
+        headerLeft={<BackArrow navigation={navigation} />}
+      />,
+    }),
+  },
+  SandryHistory: {
+    screen: SandryExpenseHistory,
+    navigationOptions: ({ navigation }) => ({
+      header: <Toolbar
+        title="Sundry Expense History"
         headerLeft={<BackArrow navigation={navigation} />}
       />,
     }),
